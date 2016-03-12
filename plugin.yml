@@ -1,0 +1,11 @@
+name: ImageFireworks
+version: 1.3
+main: es.deantonious.imagefireworks.ImageFireworks
+author: deantonious
+website: http://deantonious.es
+description: This plugin creates custom fireworks based on images
+commands:
+   imagefireworks:
+      description: Image Fireworks command
+      usage: /<command>
+      aliases: [imgfws]
