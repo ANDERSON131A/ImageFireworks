@@ -24,10 +24,6 @@ import es.deantonious.imagefireworks.ReflectionParticleEffects.ColoreableParticl
 
 public class CustomFirework {
 	
-	/**
-	 * If you are reading this, you are shit :P
-	 */
-	
 	private String image;
 	private ColoreableParticle particle;
 	private Color color;
