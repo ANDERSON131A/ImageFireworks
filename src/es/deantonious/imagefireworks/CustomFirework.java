@@ -24,6 +24,10 @@ import es.deantonious.imagefireworks.ReflectionParticleEffects.ColoreableParticl
 
 public class CustomFirework {
 	
+	/**
+	 * If you are reading this, you are shit :P
+	 */
+	
 	private String image;
 	private ColoreableParticle particle;
 	private Color color;
@@ -48,7 +52,7 @@ public class CustomFirework {
 		fM.setPower(2);
 		item.setFireworkMeta(fM);
 		
-		center.getWorld().playSound(center, Sound.FIREWORK_LAUNCH, 3, 1);
+		center.getWorld().playSound(center, Sound.ENTITY_FIREWORK_BLAST, 3, 1);
 
 		
 		new BukkitRunnable() {
@@ -82,7 +86,7 @@ public class CustomFirework {
 	}
 	
 	private void explodeFirework(final Location center) {
-		center.getWorld().playSound(center, Sound.FIREWORK_BLAST, 3, 1);
+		center.getWorld().playSound(center, Sound.ENTITY_FIREWORK_BLAST, 3, 1);
 		final ArrayList<Vector> firework = generateFirework(image);
 		final int xIni = center.getBlockX();
 		final int yIni = center.getBlockY();
